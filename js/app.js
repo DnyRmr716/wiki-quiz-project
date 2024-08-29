@@ -54,26 +54,21 @@ window.onload = function() {
 
         nextButton.addEventListener('click', nextQuestion);
     
-        // Remove previous event listeners (if any)
         realButton.removeEventListener('click', handleRealButtonClick);
         fakeButton.removeEventListener('click', handleFakeButtonClick);
     
-        // Assign the event handler functions
         handleRealButtonClick = () => {
             checkAnswer(true);
-            // Prevent further clicks after answering
             realButton.removeEventListener('click', handleRealButtonClick);
             fakeButton.removeEventListener('click', handleFakeButtonClick);
         };
     
         handleFakeButtonClick = () => {
             checkAnswer(false);
-            // Prevent further clicks after answering
             realButton.removeEventListener('click', handleRealButtonClick);
             fakeButton.removeEventListener('click', handleFakeButtonClick);
         };
     
-        // Add new event listeners
         realButton.addEventListener('click', handleRealButtonClick);
         fakeButton.addEventListener('click', handleFakeButtonClick);
     }
@@ -114,9 +109,8 @@ window.onload = function() {
         if (strikes >= 3) {
             gameOver = true;
             endGame();
-        } else if (currentQuestionIndex >= 14) { // Check if 15 questions have been answered
-            // Player won
-            gameOver = false; // Indicate a win
+        } else if (currentQuestionIndex >= 14) {
+            gameOver = false; 
             endGame();
         }
     }
@@ -129,7 +123,7 @@ window.onload = function() {
         if (gameOver) {
             resultMessageElement.textContent = 'Game Over! You got 3 strikes.';
         } else {
-            resultMessageElement.textContent = 'You Win!';
+            resultMessageElement.textContent = 'You Win! You Weirdo!';
         }
 
         restartButton.style.display = 'block';
@@ -137,23 +131,18 @@ window.onload = function() {
     }
 
     function restartGame() {
-        // 1. Reset game state variables
         currentQuestionIndex = 0;
         strikes = 0;
         gameOver = false;
       
-        // 2. Reshuffle or re-select questions
-        availableQuestions = shuffleArray(questions); // Assuming you're reusing all questions
+        availableQuestions = shuffleArray(questions); 
       
-        // 3. Update DOM elements
         strikesElement.textContent = 'Strikes: 0';
         resultMessageElement.textContent = '';
       
-        // 4. Hide restart button and show quiz container
         restartButton.style.display = 'none';
         quizContainer.style.display = 'block'; 
       
-        // 5. Start the quiz again
         renderQuestion();
         nextButton.disabled = false;
     }
