@@ -20,12 +20,12 @@
 
 **Mechanics**
 
-True button: select the true button if you think the article is true
-False button: select the false button if you think the article is false
-Strikes: try to avoid getting 3 strikes!
-Game over: The game is over if you get 3 strikes.
-Win Condition: if you can make it pass 15 questions, you win the game!
-Restart: if you get 3 strikes, you can restart the game entirely and try again!
+1.  True button: select the true button if you think the article is true
+2.  False button: select the false button if you think the article is false
+3.  Strikes: try to avoid getting 3 strikes!
+4.  Game over: The game is over if you get 3 strikes.
+5.  Win Condition: if you can make it pass 15 questions, you win the game!
+6.  Restart: if you get 3 strikes, you can restart the game entirely and try again!
 
 ## Attributions
 
