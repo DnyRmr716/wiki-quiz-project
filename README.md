@@ -6,9 +6,6 @@
 
 "Citation Needed!" is a trivia game that challenges your knowledge and ability to discern fact from fiction. You'll be presented with a series of intriguing Wikipedia articles, but some are cleverly crafted fakes! Your mission: identify the real articles and avoid accumulating three strikes. Can you navigate the maze of information and emerge victorious?
 
-**Background and Motivation**
-
-In the age of misinformation, it's easy to be fooled by convincing-sounding claims. This game aims to sharpen your critical thinking skills and make you more aware of the subtle ways information can be manipulated. It's a fun and engaging way to test your knowledge and see if you can outsmart this quiz!
 
 ## Getting Started
 
@@ -21,6 +18,15 @@ In the age of misinformation, it's easy to be fooled by convincing-sounding clai
 3.  You have 3 strikes. Be careful!
 4.  Answer 15 questions without striking out to win!
 
+**Mechanics**
+
+True button: select the true button if you think the article is true
+False button: select the false button if you think the article is false
+Strikes: try to avoid getting 3 strikes!
+Game over: The game is over if you get 3 strikes.
+Win Condition: if you can make it pass 15 questions, you win the game!
+Restart: if you get 3 strikes, you can restart the game entirely and try again!
+
 ## Attributions
 
 *   **Question Data:** The questions were inspired by Wikipedia articles.
@@ -32,9 +38,10 @@ In the age of misinformation, it's easy to be fooled by convincing-sounding clai
 *   **CSS:** Used for styling the game's appearance.
 *   **JavaScript:** Used for implementing the game logic, interactions, and state management.
 
+
 ## Next Steps (Stretch Goals)
 
 *   **More Questions:** Expand the question database with a wider variety of topics and sources.
 *   **Visual Enhancements:** Improve the game's visual design and add animations or sound effects.
 
-We hope you enjoy playing "Citation Needed!" and that it helps you become a more discerning consumer of information.
+We hope you enjoy playing "Citation Needed!"

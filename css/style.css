@@ -1,14 +1,9 @@
-@font-face {
-    font-family: 'linux-libertine';
-    src: url('/linux_libertine/LinLibertine_R.ttf') format('truetype');
-}
-
 body {
     display: flex; 
     flex-direction: column; 
     min-height: 100vh; 
     margin: 0; 
-    font-family: 'linux-libertine', sans-serif; 
+    font-family: Georgia, 'Times New Roman', Times, serif; 
     align-items: center; 
     justify-content: center; 
     background-color: #f0f0f0 ;
